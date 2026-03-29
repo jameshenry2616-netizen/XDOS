@@ -1,0 +1,14 @@
+Requirements:
+OS: Windows 10 or linux
+Python: 3.6
+Psutil
+
+Reccomended:
+OS: Windows 10
+Python: 3.10
+Psutil
+
+[!] Disclaimer [!]
+
+Linux has not been Tested, If you are on Linux, Proceed with Caution.
+We do not take Responsibility for Damage using Eval.
