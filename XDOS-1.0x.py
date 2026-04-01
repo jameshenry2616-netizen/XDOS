@@ -105,7 +105,7 @@ def main():
         elif cmd == "about":
             about_menu()
         elif cmd == "random":
-            random_menuu()
+            random_menu()
         elif cmd == "ops":
             ops()
         elif cmd == "time":
