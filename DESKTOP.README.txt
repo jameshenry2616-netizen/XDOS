@@ -12,3 +12,5 @@ Psutil
 
 Linux has not been Tested, If you are on Linux, Proceed with Caution.
 We do not take Responsibility for Damage using Eval.
+
+! Not Android Friendly !
