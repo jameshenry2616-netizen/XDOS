@@ -3,7 +3,6 @@ import os
 import sys
 import random
 import time
-import psutil as ps
     
 print("Loading Kernel")
 time.sleep(0.05)
