@@ -4,6 +4,18 @@ import sys
 import random
 import time
 import psutil as ps
+    
+print("Loading Kernel")
+time.sleep(0.05)
+print("Loading ASCII Renderer")
+time.sleep(0.085)
+print("Checking System Spesifications")
+time.sleep(0.015)
+print("--------------")
+print("Finalizing Boot")
+
+time.sleep(0.25)
+print()
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -41,14 +53,28 @@ def help_menu():
     print("  kill  - Quit the OS")
 
 def about_menu():
-    print("XDOS is a basic Line-Based OS. It is Retro-style but has no kernel.")
+    print("XDOS, Ver: 1.0.1")
 
 def random_menu():
     print("Generated:", random.randint(1, 10))
     
 def dice():
     dice = random.randint(1, 6)
-    print("You Rolled: [",dice,"]")
+    if dice == 1:
+        print("[*]")
+    elif dice == 2:
+        print("[**]")
+    elif dice == 3:
+        print("[**]")
+    elif dice == 4:
+        print("[***]")
+        print("[*]")
+    elif dice == 5:
+        print("[***]")
+        print("[**]")
+    elif dice == 6:
+        print("[***]")
+        print("[***]")
     
 def time_menu():
     unix = time.strftime("%Y-%m-%d %H:%M:%S")
@@ -87,7 +113,6 @@ def main():
         elif cmd == "sys":
             system_info()
         elif cmd == "compute":
-            time.sleep(0.2)
             if args:
                 calc(" ".join(args))
             else:
