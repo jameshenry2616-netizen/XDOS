@@ -1,18 +1,8 @@
 from math import sqrt
-import os
-import sys
 import random
 import time
-    
-print("Loading Kernel")
-time.sleep(0.05)
-print("Loading ASCII Renderer")
-time.sleep(0.085)
-print("Checking System Spesifications")
-time.sleep(0.015)
-print("--------------")
-print("Finalizing Boot")
 
+print("Loading...")
 time.sleep(0.25)
 print()
 
@@ -36,7 +26,7 @@ def help_menu():
     print("  kill  - Quit the OS")
 
 def about_menu():
-    print("XDOS, Ver: 1.0.1")
+    print("XDOS, Ver: 1.0.2")
 
 def random_menu():
     print("Generated:", random.randint(1, 10))
@@ -48,7 +38,7 @@ def dice():
     elif dice == 2:
         print("[**]")
     elif dice == 3:
-        print("[**]")
+        print("[***]")
     elif dice == 4:
         print("[***]")
         print("[*]")
