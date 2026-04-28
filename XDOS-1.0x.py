@@ -1,6 +1,4 @@
 from math import sqrt
-import os
-import sys
 import random
 import time
 import psutil as ps
@@ -14,11 +12,8 @@ time.sleep(0.015)
 print("--------------")
 print("Finalizing Boot")
 
-time.sleep(0.25)
+time.sleep(0.55)
 print()
-
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
 
 def system_info():
     print("---System---")
@@ -53,7 +48,7 @@ def help_menu():
     print("  kill  - Quit the OS")
 
 def about_menu():
-    print("XDOS, Ver: 1.0.1")
+    print("XDOS, Ver: 1.0.2")
 
 def random_menu():
     print("Generated:", random.randint(1, 10))
@@ -65,7 +60,7 @@ def dice():
     elif dice == 2:
         print("[**]")
     elif dice == 3:
-        print("[**]")
+        print("[***]")
     elif dice == 4:
         print("[***]")
         print("[*]")
@@ -87,7 +82,6 @@ def calc(expr):
         print("Invalid expression.")
         
 def main():
-    clear_screen()
     print("Welcome to XDOS!")
     print("XDOS 1.0 Type 'help' for all the commands")
 
